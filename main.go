@@ -15,6 +15,12 @@ func main() {
 			"message": "tok",
 		})
 	})
+
+	r.GET("/shiv", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "akansha",
+		})
+	})
 	r.Run()
 
 }
